@@ -1,25 +1,54 @@
+/* fade in animation */
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* page styling */
+
 @font-face {
     font-family: "La Machine Company";
     src: url(La-Machine-Company.ttf) format('Truetype');
 }
 
-body {  /* white background */
-    background-color: #0921aa;
+body {
+    background-color: rgba(9, 33, 170, 1);
     color: #ffffff;
     font-size: 18px;
-
-    padding: 2vh 0vw;
+    padding: 0px;
 }
 
-#header {
+#headerBlur {
+    backdrop-filter: blur(1px);
+    background-color: rgba(9, 33, 170, 0.70);
+    box-shadow: 0px 0px 15px 15px rgba(9, 33, 170, 0.75);
+    padding: 8px 0px 0px 0px;
     position: sticky;
-    top: 4px;
+    top: 0px;
 }
 
 #header, #linksDesktop {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#linksDesktop a:hover {
+    text-decoration: underline 2px solid;
 }
 
 #linksDesktop > p { /* space between link lines */
@@ -73,42 +102,19 @@ body {  /* white background */
     }
 
     #dropdown a:hover {
+        text-decoration: underline 2px solid;
         background-color: #ffffff;
         color: #001486;
     }
 }
 
-#test { /* DELETE ME */
-    height: 3000px;
-    width: 8px;
-    background-color: #ffffff;
-}
+
 
 /* classes */
 
 .machineFont {
     font-family: "La Machine Company";
     font-weight: lighter;
-}
-
-
-
-.underlineAnimation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.underlineAnimation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
 }
 
 
