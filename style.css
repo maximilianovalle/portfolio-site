@@ -1,24 +1,44 @@
+/* fade in animation */
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+/* page styling */
+
 @font-face {
     font-family: "La Machine Company";
     src: url(La-Machine-Company.ttf) format('Truetype');
 }
 
-body {  /* white background */
-    background-color: #ffffff;
+body {
+    background-color: rgba(9, 33, 170, 1);
     color: #ffffff;
     font-size: 18px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 0px;
 }
 
-body > div {    /* blue layer */
-    width: 98vw;
-    height: 96vh;
-    padding: 24px 0px;
-
-    background-color: #0921aa;
+#headerBlur {
+    backdrop-filter: blur(1px);
+    background-color: rgba(9, 33, 170, 0.70);
+    box-shadow: 0px 0px 15px 15px rgba(9, 33, 170, 0.75);
+    padding: 8px 0px 0px 0px;
+    position: sticky;
+    top: 0px;
 }
 
 #header, #linksDesktop {
@@ -27,22 +47,26 @@ body > div {    /* blue layer */
     align-items: center;
 }
 
-#linksDesktop > p {
+#linksDesktop a:hover {
+    text-decoration: underline 2px solid;
+}
+
+#linksDesktop > p { /* space between link lines */
     margin: 0px 8px;
 }
 
-#linksMobile {
+#linksMobile {  /* hide mobile links */
     display: none;
 }
+
+
 
 /* mobile devices */
 
 @media screen and (max-width: 750px) and (max-height: 950px) {
-    body > div {
-        width: 100vw;
-        height: 100vh;
 
-        background-color: #0921aa;
+    body {
+        font-size: 14px;
     }
 
     #linksDesktop { /* hide desktop links */
@@ -78,36 +102,19 @@ body > div {    /* blue layer */
     }
 
     #dropdown a:hover {
+        text-decoration: underline 2px solid;
         background-color: #ffffff;
         color: #001486;
     }
 }
+
+
 
 /* classes */
 
 .machineFont {
     font-family: "La Machine Company";
     font-weight: lighter;
-}
-
-
-  
-.underlineAnimation::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: #ffffff;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.underlineAnimation:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
 }
 
 
