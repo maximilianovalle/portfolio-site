@@ -4,21 +4,16 @@
 }
 
 body {  /* white background */
-    background-color: #ffffff;
+    background-color: #0921aa;
     color: #ffffff;
     font-size: 18px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 2vh 0vw;
 }
 
-body > div {    /* blue layer */
-    width: 98vw;
-    height: 96vh;
-    padding: 24px 0px;
-
-    background-color: #0921aa;
+#header {
+    position: sticky;
+    top: 4px;
 }
 
 #header, #linksDesktop {
@@ -27,22 +22,22 @@ body > div {    /* blue layer */
     align-items: center;
 }
 
-#linksDesktop > p {
+#linksDesktop > p { /* space between link lines */
     margin: 0px 8px;
 }
 
-#linksMobile {
+#linksMobile {  /* hide mobile links */
     display: none;
 }
+
+
 
 /* mobile devices */
 
 @media screen and (max-width: 750px) and (max-height: 950px) {
-    body > div {
-        width: 100vw;
-        height: 100vh;
 
-        background-color: #0921aa;
+    body {
+        font-size: 14px;
     }
 
     #linksDesktop { /* hide desktop links */
@@ -83,6 +78,12 @@ body > div {    /* blue layer */
     }
 }
 
+#test { /* DELETE ME */
+    height: 3000px;
+    width: 8px;
+    background-color: #ffffff;
+}
+
 /* classes */
 
 .machineFont {
@@ -91,7 +92,7 @@ body > div {    /* blue layer */
 }
 
 
-  
+
 .underlineAnimation::after {
     content: '';
     position: absolute;
