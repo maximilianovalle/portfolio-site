@@ -39,6 +39,7 @@ body {
     padding: 8px 0px 0px 0px;
     position: sticky;
     top: 0px;
+    margin-bottom: 24px;
 }
 
 #header, #linksDesktop {
@@ -59,7 +60,29 @@ body {
     display: none;
 }
 
+#img1 {
+    position: relative;
+    z-index: 1;
 
+    transform: rotate(-2deg);
+}
+
+#img2 {
+    position: relative;
+    z-index: 2;
+    top: -10px;
+    left: 12px;
+
+    transform: rotate(4deg);
+}
+
+#img3 {
+    position: relative;
+    z-index: 2;
+    top: -20px;
+
+    transform: rotate(-4deg);
+}
 
 /* mobile devices */
 
@@ -67,6 +90,7 @@ body {
 
     body {
         font-size: 14px;
+        line-height: 1.4;
     }
 
     #linksDesktop { /* hide desktop links */
@@ -106,6 +130,10 @@ body {
         background-color: #ffffff;
         color: #001486;
     }
+
+    #img1, #img2, #img3 {
+        left: -32px;
+    }
 }
 
 
@@ -115,6 +143,17 @@ body {
 .machineFont {
     font-family: "La Machine Company";
     font-weight: lighter;
+}
+
+.polaroid {
+    min-width: 200px;
+    max-width: 450px;
+    width: 33%;
+
+    border-top: 24px solid #ffffff;
+    border-left: 24px solid #ffffff;
+    border-right: 24px solid #ffffff;
+    border-bottom: 70px solid #ffffff;
 }
 
 
@@ -129,4 +168,15 @@ body {
 
 .rotateAnimationL:hover {
     transform: rotate(-5deg);
+}
+
+
+
+.shakeAnimation {
+    transition: transform 2s ease-in-out;
+}
+
+.shakeAnimation:hover {
+    transform: rotate(23deg);
+    /* transform: rotate(-50deg); */
 }
