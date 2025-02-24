@@ -30,7 +30,7 @@ body {
     padding: 0px;
 
     color: #ffffff;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -63,10 +63,6 @@ body {
     display: none;
 }
 
-#aboutMe {
-    padding: 0vh 5vw;
-}
-
 #aboutMeImgs {
     display: flex;
     justify-content: space-around;
@@ -96,7 +92,7 @@ body {
     z-index: -1;
 
     transform: rotate(-4deg);
-    color: rgba(255, 255, 255, 0.65)
+    color: rgba(255, 255, 255, 0.65);
 }
 
 #img1Date, #img2Date, #img3Date {
@@ -105,11 +101,12 @@ body {
 
 #aboutMeHeader-desktop {
     margin-top: 24px;
+    padding: 0px 5vw;
 }
 
 #aboutMeParagraph {
     font-size: 20px;
-    padding: 0px 5vw;
+    padding: 0px 8vw;
     text-align: center;
 }
 
@@ -180,6 +177,7 @@ body {
     }
 
     #aboutMeHeader-mobile {
+        padding: 0px 5vw;
         position: sticky;
         top: 32px;
     }
@@ -207,7 +205,7 @@ body {
     border-top: 20px solid #ffffff;
     border-left: 20px solid #ffffff;
     border-right: 20px solid #ffffff;
-    border-bottom: 80px solid #ffffff;
+    border-bottom: 20px solid #ffffff;
 
     box-shadow: 0px 0px 2px #ffffff;
 }
