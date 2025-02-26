@@ -32,7 +32,8 @@ body {
     color: #ffffff;
     font-size: 16px;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.2;
 }
 
 #headerBlur {
@@ -59,122 +60,9 @@ body {
     margin: 0px 8px;
 }
 
-#linksMobile, #aboutMeHeader-mobile {  /* hide mobile elements in desktop */
+#linksMobile {  /* hide mobile elements in desktop */
     display: none;
 }
-
-/* #aboutMeImgs {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#img1, #img2, #img3 {
-    min-width: 200px;
-    max-width: 450px;
-    width: 29vw;
-
-    border: 1vw solid #ffffff;
-    box-shadow: 0px 0px 2px #ffffff;
-}
-
-#img1, #img1Date {
-    position: relative;
-    z-index: -1;
-
-    transform: rotate(-2deg);
-    color: rgba(255, 255, 255, 0.65);
-}
-
-#img2, #img2Date {
-    position: relative;
-    z-index: -2;
-
-    transform: rotate(4deg);
-    color: rgba(255, 255, 255, 0.65);
-}
-
-#img3, #img3Date {
-    position: relative;
-    max-height: 650px;
-    object-fit: cover;
-    z-index: -1;
-
-    transform: rotate(-4deg);
-    color: rgba(255, 255, 255, 0.65);
-}
-
-#img1Date, #img2Date, #img3Date {
-    font-size: 2rem;
-}
-
-#aboutMeHeader-desktop {
-    text-align: center;
-    padding: 0px 5vw;
-
-    position: sticky;
-    top: 32px;
-} */
-
-
-/* 
-#aboutMeTimeline {
-    margin-top: 24px;
-}
-
-#lineSection1, #lineSection2 {
-    width: 100%;
-    height: 25vh;
-}
-
-#lineSection1 {
-    background-color: red;  /* DELETE ME 
-
-    border-bottom: solid 4px #ffffff;
-
-    display: flex;
-    align-items: flex-end;
-}
-
-#lineSection2 {
-    background-color: yellow;   /* DELETE ME 
-}
-
-#eventsTimeline
-
-#eventsTimeline1 {
-    background-color: purple;
-}
-
-#eventsTimeline2 {
-    background-color: pink;
-}
-
-#thinLinesTimeline1, #thinLinesTimeline2 {
-    width: 100%;
-    height: 10vh;
-
-    border-left: solid 4px #ffffff;
-    border-right: solid 4px #ffffff;
-
-    display: flex;
-}
-
-#thinLinesTimeline1 {
-    background-color: green;    /* DELETE ME 
-    justify-content: space-around;
-}
-
-#thinLinesTimeline2 {
-    background-color: orange;   /* DELETE ME 
-    justify-content: center;
-}
-
-#thinLinesTimeline1 > div, #thinLinesTimeline2 > div {
-    width: 4px;
-    height: 100%;
-    background-color: #ffffff;
-} */
 
 #test { /* DELETE ME */
     height: 900px;
@@ -188,14 +76,13 @@ body {
 
     body {
         font-size: 14px;
-        line-height: 1.4;
     }
 
-    #linksDesktop, #aboutMeHeader-desktop { /* hide desktop links */
+    #linksDesktop { /* hide desktop links */
         display: none;
     }
 
-    #linksMobile, #aboutMeHeader-mobile {  /* show mobile elements */
+    #linksMobile {  /* show mobile elements */
         display: block;
     }
 
@@ -215,7 +102,9 @@ body {
         position: absolute;
         margin-top: 8px;
         right: 16px;
+
         background-color: #001486;
+        border-radius: 2px;
     }
 
     #dropdown a {
@@ -228,72 +117,6 @@ body {
         background-color: #ffffff;
         color: #001486;
     }
-
-    /* #aboutMeHeader-mobile {
-        margin-bottom: 12px;
-    }
-
-    #aboutMeImgs {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #img1, #img2, #img3 {
-        border: 2.5vw solid #ffffff;
-        max-width: 400px;
-        width: 65vw;
-    }
-
-    #img1Date, #img2Date, #img3Date {
-        font-size: 1.25rem;
-    }
-
-    #img3, #img3Date {
-        display: none;
-    }
-
-    #aboutMeHeader-mobile {
-        padding: 0px 5vw;
-        position: sticky;
-        top: 32px;
-    } */
-
-
-
-    /* #aboutMeTimeline {
-        display: flex;
-    }
-
-    #lineSection1, #lineSection2 {
-        width: 50%;
-        height: 100vh;
-    }
-
-    #lineSection1 {
-        border-bottom: 0px;
-        border-right: solid 4px #ffffff;
-
-        justify-content: flex-end;
-    }
-
-    #thinLinesTimeline1, #thinLinesTimeline2 {
-        width: 25%;
-        height: 100vh;
-
-        border-left: solid 0px #ffffff;
-        border-right: solid 0px #ffffff;
-        border-top: solid 4px #ffffff;
-        border-bottom: solid 4px #ffffff;
-
-        flex-direction: column;
-    }
-
-    #thinLinesTimeline1 > div, #thinLinesTimeline2 > div {
-        width: 100%;
-        height: 4px;
-        background-color: #ffffff;
-    } */
 }
 
 
