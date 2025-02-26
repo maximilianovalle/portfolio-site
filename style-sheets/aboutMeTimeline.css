@@ -1,0 +1,96 @@
+
+#aboutMeTimeline {
+    margin-top: 24px;
+}
+
+#lineSection1, #lineSection2 {
+    width: 100%;
+    height: 25vh;
+}
+
+#lineSection1 {
+    background-color: red;  /* DELETE ME */
+
+    border-bottom: solid 4px #ffffff;
+
+    display: flex;
+    align-items: flex-end;
+}
+
+#lineSection2 {
+    background-color: yellow;   /* DELETE ME */
+}
+
+#eventsTimeline
+
+#eventsTimeline1 {
+    background-color: purple;
+}
+
+#eventsTimeline2 {
+    background-color: pink;
+}
+
+#thinLinesTimeline1, #thinLinesTimeline2 {
+    width: 100%;
+    height: 10vh;
+
+    border-left: solid 4px #ffffff;
+    border-right: solid 4px #ffffff;
+
+    display: flex;
+}
+
+#thinLinesTimeline1 {
+    background-color: green;    /* DELETE ME */
+    justify-content: space-around;
+}
+
+#thinLinesTimeline2 {
+    background-color: orange;   /* DELETE ME */
+    justify-content: center;
+}
+
+#thinLinesTimeline1 > div, #thinLinesTimeline2 > div {
+    width: 4px;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+/* mobile devices */
+
+@media screen and (max-width: 750px) and (max-height: 950px) {
+    #aboutMeTimeline {
+        display: flex;
+    }
+
+    #lineSection1, #lineSection2 {
+        width: 50%;
+        height: 100vh;
+    }
+
+    #lineSection1 {
+        border-bottom: 0px;
+        border-right: solid 4px #ffffff;
+
+        justify-content: flex-end;
+    }
+
+    #thinLinesTimeline1, #thinLinesTimeline2 {
+        width: 25%;
+        height: 100vh;
+
+        border-left: solid 0px #ffffff;
+        border-right: solid 0px #ffffff;
+        border-top: solid 4px #ffffff;
+        border-bottom: solid 4px #ffffff;
+
+        flex-direction: column;
+    }
+
+    #thinLinesTimeline1 > div, #thinLinesTimeline2 > div {
+        width: 100%;
+        height: 4px;
+        background-color: #ffffff;
+    }
+}
