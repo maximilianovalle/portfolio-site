@@ -21,9 +21,9 @@ body {
 /* background images */
 
 body {
-    background: url(../images/shapes/shape-blob.png) no-repeat, url(../images/shapes/shape-star.png) no-repeat, url(../images/shapes/shape-circle.png) no-repeat;
-    background-position: 80vw 74vh, -4vw 85vh, 65vw 100vh;
-    background-size: 28vw auto, 12vw 12vw, 12vw 12vw;
+    background: url(../images/shapes/shape-blob.png) no-repeat, url(../images/shapes/shape-star.png) no-repeat, url(../images/shapes/shape-circle.png) no-repeat, url(../images/shapes/shape-circle.png) no-repeat;
+    background-position: 80vw 74vh, -4vw 85vh, 65vw 100vh, 2vw -6vh;
+    background-size: 28vw auto, 12vw 12vw, 12vw 12vw, 20vw 20vw;
 }
 
 
@@ -87,7 +87,7 @@ body {
     /* background images */
 
     body {
-        background-size: 28vh auto, 12vh 12vh, 12vh 12vh;
+        background-size: 28vh auto, 12vh 12vh, 12vh 12vh, 20vh 20vh;
     }
 
 
